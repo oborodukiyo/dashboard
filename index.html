@@ -14,7 +14,10 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Noto+Sans+JP:400,700,900&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/59fa68788a.js" crossorigin="anonymous"></script>
+
+  <!-- Devicon -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <title>Dashboard</title>
 </head>
 <body>
@@ -25,23 +28,23 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item fw700 fs0p8em">
+      <ul class="navbar-nav mr-auto fs0p8rem fw700">
+        <li class="nav-item">
           <a class="nav-link" href="#">レッスン一覧</a>
         </li>
-        <li class="nav-item fw700 fs0p8em">
+        <li class="nav-item">
           <a class="nav-link" href="#">チャレンジ</a>
         </li>
-        <li class="nav-item fw700 fs0p8em">
+        <li class="nav-item">
           <a class="nav-link" href="#">ランキング</a>
         </li>
-        <li class="nav-item fw700 fs0p8em">
+        <li class="nav-item">
           <a class="nav-link" href="#">コミュニティ</a>
         </li>
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item mx-3">
-          <button type="button" class="btn btn-warning fw700 fs0p8em">プレミアム会員</button>
+          <button type="button" class="btn btn-warning fw700 fs0p8rem">プレミアム会員</button>
         </li>
         <li class="nav-item mx-3 d-flex align-items-center">
           <a href="#" class="text-dark"><i class="fas fa-bell fa-lg"></i></a>
@@ -58,31 +61,31 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex justify-content-center">
-          <img src="img/dashboard-user-pic.png" class="w8em h8em m-4">
+          <img src="img/dashboard-user-pic.png" class="img8em m-4">
           <div class="flex-col-center">
             <div class="">
               <div>Shinya Tajima</div>
-              <div class="fw700 fs2em">Lv.65</div>
+              <div class="fw700 fs2rem">Lv.65</div>
             </div>
           </div>
         </div>
         <div class="col-lg-6 d-flex justify-content-around">
           <div class="row">
             <div class="col-6 col-lg-3 flex-col-center my-3">
-              <div class="fw700 fs2em">7,608</div>
-              <div class="fs0p8em text-nowrap">リカコイン</div>
+              <div class="fw700 fs2rem">7,608</div>
+              <div class="text-nowrap fs0p8rem">リカコイン</div>
             </div>
             <div class="col-6 col-lg-3 flex-col-center my-3">
-              <div class="fw700 fs2em">121</div>
-              <div class="fs0p8em text-nowrap">チュートリアル</div>
+              <div class="fw700 fs2rem">121</div>
+              <div class="text-nowrap fs0p8rem">チュートリアル</div>
             </div>
             <div class="col-6 col-lg-3 flex-col-center my-3">
-              <div class="fw700 fs2em">67</div>
-              <div class="fs0p8em text-nowrap">チャレンジ</div>
+              <div class="fw700 fs2rem">67</div>
+              <div class="text-nowrap fs0p8rem">チャレンジ</div>
             </div>
             <div class="col-6 col-lg-3 flex-col-center my-3">
-              <div class="fw700 fs2em">32</div>
-              <div class="fs0p8em text-nowrap">プロジェクト</div>
+              <div class="fw700 fs2rem">32</div>
+              <div class="text-nowrap fs0p8rem">プロジェクト</div>
             </div>
           </div>
         </div>
@@ -98,6 +101,333 @@
     </div>
     <div class="row">
       <div class="col-lg-12 bg-warning" style="height:30vh;"></div>
+    </div>
+  </div>
+
+  <!-- cards -->
+  <div class="container my-5">
+    <h4 class="fw700 m-3">前回の続き</h4>
+    <div class="row row-cols-1 row-cols-lg-2">
+      <div class="col mb-4">
+        <div class="card card-bt-green shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <div>
+                <p>コンピュータサイエンスの基礎</p>
+                <h5 class="card-title">初級</h5>
+              </div>
+              <img src="img/progress-bar.png" class="img6em mx-3">
+            </div>
+            <div>
+              <p>現在学習中のレッスン</p>
+              <div class="bg-light d-flex align-items-center px-3">
+                <i class="fas fa-file-code fa-4x m-3 text-info"></i>
+                <div>
+                  <div>データタイプ</div>
+                  <div>2進数とデータ解釈</div>
+                </div>
+              </div>
+              <div class="text-right mt-3"><a href="#">続きからはじめる</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <h4 class="fw700 m-3">コンピュータサイエンスの基礎</h4>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+      <div class="col mb-4">
+        <div class="card card-bt-green shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <h5 class="card-title">初級<span class="badge badge-pill badge-danger mx-2 align-text-bottom">NEW</span></h5>
+              <img src="img/binary.png" class="img2em">
+            </div>
+            <p class="card-text">コンピュータサイエンスの基礎をPythonを使って学習します。プログラミング経験のない方はこのコースから始めることをおすすめします。</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card card-bt-purple shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <h5 class="card-title">中級<span class="badge badge-pill badge-warning mx-2 align-text-bottom">Premium</span></h5>
+              <i class="fas fa-stream fa-2x text-info"></i>
+            </div>
+            <p class="card-text">コンピュータサイエンスの基礎をPythonを使って学習します。プログラミング経験のない方はこのコースから始めることをおすすめします。</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card card-bt-green shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <h5 class="card-title">上級<span class="badge badge-pill badge-warning mx-2 align-text-bottom">Premium</span></h5>
+              <i class="fas fa-feather fa-2x text-success"></i>
+            </div>
+            <p class="card-text">コンピュータサイエンスの基礎をPythonを使って学習します。プログラミング経験のない方はこのコースから始めることをおすすめします。</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <h4 class="fw700 m-3">プログラミングパラダイム</h4>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+      <div class="col mb-4">
+        <div class="card card-bt-blue shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <h5 class="card-title">OOP<span class="badge badge-pill badge-secondary mx-2 align-text-bottom">Coming Soon</span></h5>
+              <i class="fas fa-code-branch fa-2x text-danger"></i>
+            </div>
+            <p class="card-text">コンピュータサイエンスの基礎をPythonを使って学習します。プログラミング経験のない方はこのコースから始めることをおすすめします。</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card card-bt-blue shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <h5 class="card-title">関数型言語<span class="badge badge-pill badge-secondary mx-2 align-text-bottom">Coming Soon</span></h5>
+              <img src="img/functional-programming.svg" class="img2em">
+            </div>
+            <p class="card-text">コンピュータサイエンスの基礎をPythonを使って学習します。プログラミング経験のない方はこのコースから始めることをおすすめします。</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card card-bt-blue shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <h5 class="card-title">論理プログラミング<span class="badge badge-pill badge-secondary mx-2 align-text-bottom">Coming Soon</span></h5>
+              <i class="fas fa-share-alt fa-2x text-primary"></i>
+            </div>
+            <p class="card-text">コンピュータサイエンスの基礎をPythonを使って学習します。プログラミング経験のない方はこのコースから始めることをおすすめします。</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <h4 class="fw700 m-3">アルゴリズム＆データ構造</h4>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+      <div class="col mb-4">
+        <div class="card card-bt-blue shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <h5 class="card-title">アルゴリズム<span class="badge badge-pill badge-secondary mx-2 align-text-bottom">Coming Soon</span></h5>
+              <i class="fas fa-brain fa-2x text-warning"></i>
+            </div>
+            <p class="card-text">コンピュータサイエンスの基礎をPythonを使って学習します。プログラミング経験のない方はこのコースから始めることをおすすめします。</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card card-bt-blue shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <h5 class="card-title">データ構造<span class="badge badge-pill badge-secondary mx-2 align-text-bottom">Coming Soon</span></h5>
+              <i class="fas fa-database fa-2x text-success"></i>
+            </div>
+            <p class="card-text">コンピュータサイエンスの基礎をPythonを使って学習します。プログラミング経験のない方はこのコースから始めることをおすすめします。</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <h4 class="fw700 m-3">アルゴリズム＆データ構造</h4>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+      <div class="col mb-4">
+        <div class="card card-bt-blue shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <h5 class="card-title">デザインパターン<span class="badge badge-pill badge-secondary mx-2 align-text-bottom">Coming Soon</span></h5>
+              <i class="fas fa-vector-square fa-2x text-info"></i>
+            </div>
+            <p class="card-text">コンピュータサイエンスの基礎をPythonを使って学習します。プログラミング経験のない方はこのコースから始めることをおすすめします。</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card card-bt-blue shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <h5 class="card-title">ソフトウェア開発<span class="badge badge-pill badge-secondary mx-2 align-text-bottom">Coming Soon</span></h5>
+              <i class="fas fa-wrench fa-2x text-danger"></i>
+            </div>
+            <p class="card-text">コンピュータサイエンスの基礎をPythonを使って学習します。プログラミング経験のない方はこのコースから始めることをおすすめします。</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <h4 class="fw700 m-3">フレームワーク</h4>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+      <div class="col mb-4">
+        <div class="card card-bt-green shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <h5 class="card-title">React<span class="badge badge-pill badge-secondary mx-2 align-text-bottom">Coming Soon</span></h5>
+              <i class="devicon-react-original fa-2x colored"></i>
+            </div>
+            <p class="card-text">コンピュータサイエンスの基礎をPythonを使って学習します。プログラミング経験のない方はこのコースから始めることをおすすめします。</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card card-bt-purple shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <h5 class="card-title">Laravel<span class="badge badge-pill badge-secondary mx-2 align-text-bottom">Coming Soon</span></h5>
+              <i class="devicon-laravel-plain fa-2x colored"></i>
+            </div>
+            <p class="card-text">コンピュータサイエンスの基礎をPythonを使って学習します。プログラミング経験のない方はこのコースから始めることをおすすめします。</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card card-bt-green shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <h5 class="card-title">Vue.js<span class="badge badge-pill badge-secondary mx-2 align-text-bottom">Coming Soon</span></h5>
+              <i class="devicon-vuejs-plain fa-2x colored"></i>
+            </div>
+            <p class="card-text">コンピュータサイエンスの基礎をPythonを使って学習します。プログラミング経験のない方はこのコースから始めることをおすすめします。</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card card-bt-green shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <h5 class="card-title">Node.js<span class="badge badge-pill badge-secondary mx-2 align-text-bottom">Coming Soon</span></h5>
+              <i class="devicon-nodejs-plain fa-2x colored"></i>
+            </div>
+            <p class="card-text">コンピュータサイエンスの基礎をPythonを使って学習します。プログラミング経験のない方はこのコースから始めることをおすすめします。</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card card-bt-green shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <h5 class="card-title">Angular.js<span class="badge badge-pill badge-secondary mx-2 align-text-bottom">Coming Soon</span></h5>
+              <i class="devicon-angularjs-plain fa-2x colored"></i>
+            </div>
+            <p class="card-text">コンピュータサイエンスの基礎をPythonを使って学習します。プログラミング経験のない方はこのコースから始めることをおすすめします。</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card card-bt-purple shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <h5 class="card-title">Django<span class="badge badge-pill badge-secondary mx-2 align-text-bottom">Coming Soon</span></h5>
+              <i class="devicon-django-plain fa-2x colored"></i>
+            </div>
+            <p class="card-text">コンピュータサイエンスの基礎をPythonを使って学習します。プログラミング経験のない方はこのコースから始めることをおすすめします。</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card card-bt-purple shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <h5 class="card-title">.NET<span class="badge badge-pill badge-secondary mx-2 align-text-bottom">Coming Soon</span></h5>
+              <i class="devicon-dot-net-plain fa-2x colored"></i>
+            </div>
+            <p class="card-text">コンピュータサイエンスの基礎をPythonを使って学習します。プログラミング経験のない方はこのコースから始めることをおすすめします。</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card card-bt-purple shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <h5 class="card-title">Spring<span class="badge badge-pill badge-secondary mx-2 align-text-bottom">Coming Soon</span></h5>
+              <img src="img/spring.png" class="img2em">
+            </div>
+            <p class="card-text">コンピュータサイエンスの基礎をPythonを使って学習します。プログラミング経験のない方はこのコースから始めることをおすすめします。</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card card-bt-blue shadow">
+          <div class="card-body">
+            <div class="d-flex justify-content-between my-3">
+              <h5 class="card-title">Unity<span class="badge badge-pill badge-secondary mx-2 align-text-bottom">Coming Soon</span></h5>
+              <i class="fab fa-unity fa-2x"></i>
+            </div>
+            <p class="card-text">コンピュータサイエンスの基礎をPythonを使って学習します。プログラミング経験のない方はこのコースから始めることをおすすめします。</p>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>

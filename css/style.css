@@ -4,27 +4,40 @@ body {
   font-family: "Lato","Noto Sans JP";
 }
 
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 .fw700 {
   font-weight: 700;
 }
 
-.fs0p8em {
-  font-size: 0.8em;
+.fs0p8rem {
+  font-size: 0.8rem;
 }
 
-.fs2em {
-  font-size: 2em;
+.fs2rem {
+  font-size: 2rem;
 }
 
 .bg-purple {
   background-color: rgb(155,118,246);
 }
 
-.w8em {
+.img8em {
   width: 8em;
-}
-.h8em {
   height: 8em;
+}
+
+.img6em {
+  width: 6em;
+  height: 6em;
+}
+
+.img2em {
+  width: 2em;
+  height: 2em;
 }
 
 .flex-col-center {
@@ -32,4 +45,20 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.card-bt-green {
+  border-top: 10px solid rgb(52,175,168);
+}
+
+.card-bt-purple {
+  border-top: 10px solid rgb(155,118,246);
+}
+
+.card-bt-blue {
+  border-top: 10px solid rgb(64,89,196);
+}
+
+.card-text {
+  font-size: 0.8rem;
 }
