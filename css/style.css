@@ -1,0 +1,35 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Lato","Noto Sans JP";
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.fs0p8em {
+  font-size: 0.8em;
+}
+
+.fs2em {
+  font-size: 2em;
+}
+
+.bg-purple {
+  background-color: rgb(155,118,246);
+}
+
+.w8em {
+  width: 8em;
+}
+.h8em {
+  height: 8em;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
